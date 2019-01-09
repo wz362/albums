@@ -2,15 +2,21 @@
 
 // Import a library to help create a component
 import React from 'react';
-import { AppRegistry } from 'react-native'; /* Imports Destructuring */
-import Header from './src/components/header'; /* Path if written by ourselves */
+import { AppRegistry, View } from 'react-native'; /* Imports Destructuring */
+import Header from './src/components/Header'; /* Path if written by ourselves */
+import AlbumList from './src/components/AlbumList';
 
 // Create a compenent  /* One Compoenent per file */
 const App = () => (
-    <Header headerText={'Albumasdfasdfs'} /> /* Component Nesting: put one component into another */
     /* JSX: an extension to Javascript language that is used to write 
             re-act components
+        Note: Returns only one single top tag
     */
+    <View> 
+        <Header headerText={'Albums'} />
+        <AlbumList />
+    </View>
+    
 );
 
 
