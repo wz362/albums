@@ -2,15 +2,17 @@
 
 // Import a library to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native'; /* Imports Destructuring */
+import { AppRegistry } from 'react-native'; /* Imports Destructuring */
+import Header from './src/components/header'; /* Path if written by ourselves */
 
 // Create a compenent  /* One Compoenent per file */
 const App = () => (
-    <Text>Some Text</Text> 
+    <Header headerText={'Albumasdfasdfs'} /> /* Component Nesting: put one component into another */
     /* JSX: an extension to Javascript language that is used to write 
             re-act components
     */
 );
+
 
 // Render it to the device
 AppRegistry.registerComponent('albums', () => App);
@@ -22,5 +24,7 @@ AppRegistry.registerComponent('albums', () => App);
                                 component to render in the 
                                 application
     
-Note: For every react native app, we have to register at least one component.
+Note: 
+    For every react native app, we have to register at least one component.
+    App is the 'root' component, only the root component uses 'AppRegistry'.
 */
