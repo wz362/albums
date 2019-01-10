@@ -12,7 +12,7 @@ const App = () => (
             re-act components
         Note: Returns only one single top tag
     */
-    <View> 
+    <View style={{ flex: 1 }}> 
         <Header headerText={'Albums'} />
         <AlbumList />
     </View>
