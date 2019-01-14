@@ -56,5 +56,6 @@ react-native init albums
 Run project:
 ```sh
 cd albums
+npm install
 react-native run-ios
 ```
